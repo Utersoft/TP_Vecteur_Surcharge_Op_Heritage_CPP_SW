@@ -13,12 +13,14 @@ int main() {
 
 	Vecteur3.afficheVecteur2D();
 
-	//Vecteur3 = Vecteur1.sommeVecteur2D(Vecteur2);
+	//Vecteur3 = Vecteur1 + Vecteur2;
+	//Vecteur3 = Vecteur1 - Vecteur2;
+	Vecteur3 = Vecteur1 * Vecteur2;
 
-	//Vecteur3.afficheVecteur2D();
+	Vecteur3.afficheVecteur2D();
 
 	cout << coincide2D(Vecteur1, Vecteur2) << endl;
-	//cout << coincide2D(Vecteur1, Vecteur3) << endl;
+	cout << coincide2D(Vecteur1, Vecteur3) << endl;
 
 
 	return 0;

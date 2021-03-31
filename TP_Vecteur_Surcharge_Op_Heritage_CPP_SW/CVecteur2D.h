@@ -20,17 +20,18 @@ public:
 
 	//Fonctions membres
 	//Opérations usuelles
-	//Addition de deux vecteurs
-	CVect2D sommeVecteur2D(CVect2D& Vect)const;
+	//Surcharge des opérateurs +, -, * et =
+	CVect2D operator +(const CVect2D &Vect)const;
+	
+	CVect2D operator -(const CVect2D &Vect)const;
+	
+	CVect2D operator *(const CVect2D &Vect)const;
+	
+	CVect2D &operator =(const CVect2D &Vect);
 
-	//Soustraction de deux vecteurs
-	CVect2D soustractionVecteur2D(CVect2D& Vect)const;
-
-	//Multiplication de 2 vecteurs
-	CVect2D multiplicationVecteur2D(CVect2D& Vect)const;
 
 	//Fonction amie de CVect2D
-	friend bool coincide2D(CVect2D& const Vect1, CVect2D& const Vect2);
+	friend bool coincide2D(const CVect2D& Vect1, const CVect2D& Vect2);
 
 	//Fonction d'affichage du vecteur
 	void afficheVecteur2D();

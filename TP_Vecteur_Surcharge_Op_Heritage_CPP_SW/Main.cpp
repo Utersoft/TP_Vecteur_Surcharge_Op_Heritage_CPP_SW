@@ -14,16 +14,16 @@ int main() {
 	//Copie d'un vecteur3d
 	CVect3D Vecteur3D3(Vecteur3D1);
 
-	Vecteur3D3.affichVecteur3d();
+	//Affichage du vecteur 3 via la surcharge du <<
+	cout << Vecteur3D3;
 
-	//Vecteur3D3 = Vecteur3D1 + Vecteur3D2;
-	//Vecteur3D3 = Vecteur3D1 * Vecteur3D2;
-	Vecteur3D3 = Vecteur3D1 - Vecteur3D2;
+	//Assignation des valeurs d'un vecteurs via la surcharge du =
+	Vecteur3D3 = Vecteur3D2;
 
-	Vecteur3D3.affichVecteur3d();
+	cout << Vecteur3D3;
 
-	cout << coincide3D(Vecteur3D1, Vecteur3D2) << endl;
-	cout << coincide3D(Vecteur3D1, Vecteur3D3) << endl;
+	
+
 
 
 	return 0;

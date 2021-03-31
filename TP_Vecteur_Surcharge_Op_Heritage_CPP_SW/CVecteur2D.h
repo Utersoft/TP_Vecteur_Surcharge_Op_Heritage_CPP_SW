@@ -13,7 +13,7 @@ public:
 	CVect2D(float flt_x = 0.0, float flt_y = 0.0);
 
 	//Cosntructeur de copie
-	CVect2D(CVect2D& Vect);
+	CVect2D(const CVect2D& Vect);
 
 	//Destructeur
 	~CVect2D();
@@ -34,11 +34,11 @@ public:
 	friend bool coincide2D(const CVect2D& Vect1, const CVect2D& Vect2);
 
 	//Fonction d'affichage du vecteur
-	void afficheVecteur2D();
+	void afficheVecteur2D()const;
 
 	//Accesseurs
-	float getX();
-	float gety();
+	float getX()const;
+	float getY()const;
 
 	//Mutateurs
 	void setX(float flt_x);

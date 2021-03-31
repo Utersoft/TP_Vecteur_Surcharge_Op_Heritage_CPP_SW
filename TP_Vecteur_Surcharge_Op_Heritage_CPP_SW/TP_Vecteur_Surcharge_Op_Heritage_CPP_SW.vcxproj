@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CVecteur2D.h" />
+    <ClInclude Include="Vecteur3D.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CVecteur2D.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Vecteur3D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

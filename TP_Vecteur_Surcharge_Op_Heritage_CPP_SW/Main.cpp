@@ -1,4 +1,5 @@
 #include "CVecteur2D.h"
+#include "Vecteur3D.h"
 #include <iostream>
 
 using namespace std;
@@ -6,21 +7,23 @@ using namespace std;
 
 int main() {
 
-	CVect2D Vecteur1(1.5, 4.4);
-	CVect2D Vecteur2(2.0, 8.6);
+	//Création de 2 vecteurs 3d
+	CVect3D Vecteur3D1(4.0, 8.0, 5.0);
+	CVect3D Vecteur3D2(3.0, 3.5, 4.5);
 
-	CVect2D Vecteur3(Vecteur1);
+	//Copie d'un vecteur3d
+	CVect3D Vecteur3D3(Vecteur3D1);
 
-	Vecteur3.afficheVecteur2D();
+	Vecteur3D3.affichVecteur3d();
 
-	//Vecteur3 = Vecteur1 + Vecteur2;
-	//Vecteur3 = Vecteur1 - Vecteur2;
-	Vecteur3 = Vecteur1 * Vecteur2;
+	//Vecteur3D3 = Vecteur3D1 + Vecteur3D2;
+	//Vecteur3D3 = Vecteur3D1 * Vecteur3D2;
+	Vecteur3D3 = Vecteur3D1 - Vecteur3D2;
 
-	Vecteur3.afficheVecteur2D();
+	Vecteur3D3.affichVecteur3d();
 
-	cout << coincide2D(Vecteur1, Vecteur2) << endl;
-	cout << coincide2D(Vecteur1, Vecteur3) << endl;
+	cout << coincide3D(Vecteur3D1, Vecteur3D2) << endl;
+	cout << coincide3D(Vecteur3D1, Vecteur3D3) << endl;
 
 
 	return 0;

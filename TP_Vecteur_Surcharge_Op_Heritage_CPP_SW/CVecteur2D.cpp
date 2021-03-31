@@ -11,7 +11,7 @@ CVect2D::CVect2D(float flt_x, float flt_y)
 }
 
 //Constructeur de copie
-CVect2D::CVect2D(CVect2D& Vect)
+CVect2D::CVect2D(const CVect2D& Vect)
 {
 	this->flt_x = Vect.flt_x;
 	this->flt_y = Vect.flt_y;
@@ -65,18 +65,18 @@ CVect2D& CVect2D::operator=(const CVect2D& Vect)
 
 
 //Affichage des valeurs de x et de y du vecteur
-void CVect2D::afficheVecteur2D()
+void CVect2D::afficheVecteur2D()const
 {
 	cout << "X : " << this->flt_x << endl << "Y : " << this->flt_y << endl;
 }
 
 //Accesseurs
-float CVect2D::getX()
+float CVect2D::getX()const
 {
 	return this->flt_x;
 }
 
-float CVect2D::gety()
+float CVect2D::getY()const
 {
 	return this->flt_y;
 }

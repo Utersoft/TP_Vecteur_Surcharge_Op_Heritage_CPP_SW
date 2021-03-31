@@ -18,12 +18,18 @@
     <ClInclude Include="CVecteur2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vecteur3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CVecteur2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vecteur3D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
